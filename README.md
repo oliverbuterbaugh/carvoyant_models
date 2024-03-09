@@ -10,7 +10,7 @@ Government of Jersey publishes the live data of Green St, Minden Pl, Patriotic S
 
 ## Usage in Xcode project / app playground
 
-Drag each .mlmodel file into the sidebar, ensuring they're added to the target. On build, a class for each model will be automatically generated. You can then make a simple call to the model using the built-in input object.
+Drag each .mlmodel file into the sidebar, ensuring they're added to the target. On build, a class for each model will be automatically generated. You can then make a simple call to the model using the built-in input class.
 
 ```
 import CoreML
