@@ -8,6 +8,17 @@ The Carvoyant app uses six tree ensemble regressor (random forest) models, one f
 
 Government of Jersey publishes the live data of Green St, Minden Pl, Patriotic St, Sand St, Pier Rd, and Les Jardin carparks to https://www.gov.je/Travel/Motoring/Parking/pages/carparkspaces.aspx, which, on brief inspection of the source, gets its data from the public API https://sojpublicdata.blob.core.windows.net/sojpublicdata/carpark-data.json. I've included the clean data (with precipitation and wind speed added) up to date with the models.
 
+### clean_carpark_data.csv
+
+- Available_Spaces represents the spaces left in the carpark
+- DayOfWeek represents the day of week, with 0 being monday and 6 being sunday
+- MinutesPastMidnight represents the time in minutes
+- Precipitation is calculated hourly in mm
+- WindSpeed is calculated hourly in km/h
+- CarparkCodeInt is the carpark represented as 0 - 5, in the order Green St, Minden Pl, Patriotic St, Sand St, Pier Rd, Les Jardin
+- WeekendWeekday is represented as a 1 for weekday and 0 for weekend
+- TimeOfDay is represented as a 0 for before 06:00, a 1 for between 06:00 and 18:00, and a 2 for after 18:00
+
 ## Usage in Xcode project / app playground
 
 Drag each .mlmodel file into the sidebar, ensuring they're added to the target. On build, a class for each model will be automatically generated. You can then make a simple call to the model using the built-in input class.
