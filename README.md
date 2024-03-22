@@ -1,7 +1,5 @@
 # carvoyant_models
 
-## App
-
 Download Carvoyant for iPhone here https://apps.apple.com/gb/app/carvoyant/id6479177271 
 
 ## Intro
