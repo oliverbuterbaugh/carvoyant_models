@@ -1,5 +1,9 @@
 # carvoyant_models
 
+## App
+
+Download Carvoyant for iPhone here https://apps.apple.com/gb/app/carvoyant/id6479177271 
+
 ## Intro
 
 The Carvoyant app uses six tree ensemble regressor (random forest) models, one for each carpark, trained on roughly five weeks of data. Each model has six features: Precipitation, WindSpeed, DayOfWeek, MinutesPastMidnight, WeedendWeekday, and TimeOfDay. The latter two are categorical features representing progress through the workweek and workday, respectively; these are calculated by the app using the day of week and time inputs.
